@@ -123,6 +123,10 @@ body {
     #logos-link:hover {
         background-color: #0056b3; /* Darker color on hover */
     }
+
+    svg{
+        padding-right: 3rem;
+    }
     
 /* *** Utility Classes *** */
 .flex-container {
