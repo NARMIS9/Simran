@@ -174,7 +174,7 @@ header section {
 
 ul a {
     color:#1190f1;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 1rem;
     display: block;
 }
@@ -210,12 +210,9 @@ li span {
 }
 
 @media screen and (min-width: 502px) {
-    /* header {
-        min-width: 1024px;
-        margin: 0 auto;
-    } */
+
     header {
-        background-color: #e00b0b;
+        background-color: #fff;
         width: 100%;
         margin: 0 auto;
         /*Thiscenterstheelementhorizontally*/
@@ -233,7 +230,7 @@ li span {
         width: auto; /* eqiv of unset for width */
         max-height: unset;
         overflow: visible;
-        background-color: #fff;
+        background-color: #984141;
         margin-right: 4rem;
     }
 
@@ -259,8 +256,9 @@ li span {
         display: inline-block;
     }
 
-.menu li:first-child,
-.menu li:nth-child(3) {
+.menu li
+/* .menu li:nth-child(3), */
+{
     position: relative;
 }
 
@@ -268,12 +266,13 @@ ul.dropdown {
         position: absolute;
         left: -3rem;
         visibility: hidden;
-        background-color: #fff;
+        background-color: #5e1414;
     }
 
     ul.menu > li:hover ul.dropdown,
     ul.menu > li ul.dropdown:hover {
         visibility: visible;
+        display: block;
     }
 
 
