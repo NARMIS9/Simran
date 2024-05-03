@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Photography-projects</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <style>
+    body{
+      background:#16479025;
+    }
+    .carousel {
+      border: 5px solid #dddddd; /* You can adjust the border size and color as needed */
+      overflow: hidden; /* Ensures the border is visible even if the carousel controls overflow */
+    }
+  </style>
     <header>
         <section class="flex-container">
             <h1 class="sr-only">RWD</h1>
@@ -60,101 +70,144 @@
         
     </div>
    
-   <h2>Photos Captured By me</h2>
-   <p>All these images are clicked by <span>Nikon DSLR 5300</span></p>
-   <p>you can use the buttons to go to particular sections</p>
-   <a href="#section1" id="logos-link">Go to Section 1</a>
-   
-   <div class="photos">
-        <div class="long-1">
-            <div>
-            <figure>
-                <img src="img/photos/05-Motion.JPG" alt="">
-            <figcaption>   stop motion captured. f=
-             </figcaption>
-            </figure>
+   <h2 class="d-none">Collections of pictures throughout my semester 2nd at NAIT</h2>
+   <p class="text-center mb-3">All these photos are captured using <span>Nikon DSLR 5300</span></p>
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <img src="img/photos/03-Panorama.webp" alt="">
+      </div>
+    </div>
+   </div>
+
+   <div class="container">
+     <div class="row justify-content-center my-5">
+       <div class=" col-lg-10 col-xl-10">
+         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-indicators d-none">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
+           
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/photos/05-Motion.JPG" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
             </div>
-            
-            <div>
-                <figure><img src="img/photos/odds-d.o.f-01.JPG" alt="">
-            <figcaption> odds with a background
-            </figcaption>
-            </figure>
+            <div class="carousel-item">
+              <img src="img/photos/odds-d.o.f-01.JPG" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
             </div>
-               
-        </div>
-   
-             <div class="long-2">
-                 <div>
-                    <figure>
-                    <img src="img/photos/02-still-life_thirds.JPG" alt="">
-                 <figcaption> still life thirds
-                             </figcaption>
-                             </figure>
-                     </div>
-                     <div>
-                         <figure><img src="img/photos/04-ShallowDOF.JPG" alt="">
-                     <figcaption> shallow depyh of field
-                     </figcaption>
-                 </figure>
-                 </div>
-                 
-                 <div>
-                     <figure><img src="img/photos/framing-background-02.JPG" alt="">
-                 <figcaption> point of view
-                 </figcaption>
-                 </figure>
+            <div class="carousel-item">
+              <img src="img/photos/03-Backlit.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/photos/01-Still-Life-Odds.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/photos/02-Landscape orientation.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+           </div>
+       </div>
+          </div>
+          <h3 class="text-center">An image-carousel</h3>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-8 ol-md-8 col-lg-6 col-xl-6">
+                <img src="img/photos/01-Portrait orientation.webp" alt="">
+              </div>
+              
+            </div>
+          </div>
+               <div class="long-2">
+                   <div>
+                      <figure>
+                      <img src="img/photos/02-still-life_thirds.JPG" alt="">
+                   <figcaption> Still life photography with rule of thirds
+                               </figcaption>
+                               </figure>
+                       </div>
+                       <div>
+                           <figure><img src="img/photos/04-ShallowDOF.JPG" alt="">
+                       <figcaption> Photography using shallow depth of field
+                       </figcaption>
+                   </figure>
+                   </div>
+       
+                   <div>
+                       <figure><img src="img/photos/framing-background-02.JPG" alt="">
+                   <figcaption> Photography using point of view
+                   </figcaption>
+                   </figure>
+     </div>
                  </div>
              </div>
 <div>
+  <h5 class="text-center">Photography showing principle of Reciprocity</h5>
 
-    <div class="long-3">
-        <div>
-            <figure><img src="img/photos/01-Still-Life-Odds.JPG" alt="">
-        <figcaption> still life odds
-        </figcaption>
-        </figure>
-        </div>
-        <figure><img src="img/photos/03-Backlit-c.JPG" alt="">
-        <figcaption> backlit
-        </figcaption>
-        </figure>
-        </div>
-    </div>
-
-
-    </div>
     <div class="sketches">
         <div>
           <img src="img/photos/01-Reciprocity1.JPG" alt="">
-          <figcaption>one</figcaption>
+          <figcaption>  Camera settings >> f-stop=  ;Shutter Speed=   ; ISO=  </figcaption>
         </div>
         <div>
           <img src="img/photos/02-Reciprocity2.JPG" alt="">
-          <figcaption>one</figcaption>
+          <figcaption>Camera settings >> f-stop=  ;Shutter Speed=   ; ISO=</figcaption>
       
         </div>
           </div>
+          <h5 class="text-center">Tile making using Adobe Photoshop</h5>
           <div class="sketches">
             <div>
               <img src="img/photos/01-Texture1.JPG" alt="">
-              <figcaption>one</figcaption>
+              <figcaption>A photo of grass</figcaption>
             </div>
             <div>
               <img src="img/photos/02-Texture2.jpg" alt="">
-              <figcaption>one</figcaption>
+              <figcaption>Being used as a textured tile</figcaption>
           
             </div>
               </div>
-
-              <div class="sketches" id="section1">
+          <h5 class="text-center">Corrected perspective using Adobe Photoshop</h5>
+              <div class="sketches">
                 <div>
                   <img src="img/photos/03-Perspective-Original.jpg" alt="">
-                  <figcaption>one</figcaption>
+                  <figcaption>A tilted picture</figcaption>
                 </div>
                 <div>
                   <img src="img/photos/03-Corrected-Perspective.jpg" alt="">
-                  <figcaption>one</figcaption>
+                  <figcaption>Straightened picture</figcaption>
                 </div>
                   </div>
     <script src="js/main.js" defer ></script> 

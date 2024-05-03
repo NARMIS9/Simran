@@ -6,63 +6,82 @@
 
     <title>Toggle Navigation</title>
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <section class="flex-container">
-            <h1 class="sr-only">RWD</h1>
-           <!-- <a href="index.html"><img src="img/Simran_Logo4_LogoWord.jpg" alt=""></a> -->
-            <button class="toggle-btn">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 80">
-                    <rect width="100" height="20" rx="8"></rect>
-                    <rect y="30" width="100" height="20" rx="8"></rect>
-                    <rect y="60" width="100" height="20" rx="8"></rect>
-                </svg>
-            </button>
-        </section>
-        <nav>
-               <ul class="menu flex-container">
-                    <li><a href="#">Projects<span>&#9660;</span></a>
-                        <ul class="dropdown">
-                            <li><a href="graphics.html">Graphics</a></li>
-                            <li><a href="web-design.html">Web-design</a></li>
-                            <li><a href="photography.html">Photography</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact<span>&#9660;</span></a>
-                        <ul class="dropdown">
-                          <li><a href="tel:+15879367413">Call</a></li>
-                          <li><a href="mailto:simmrann4979@gmail.com">Email</a> </li>
-                          <li><a href="sms:+15879367413">Text</a></li>
-                          <li><a href="https://www.instagram.com/s.i.m.r.a.n7/">Instagram</a></li>
-                        </ul>
-                    </li>
+      <section class="flex-container">
+        <h1 class="sr-only">RWD</h1>
+       <!-- <a href="index.html"><img src="img/Simran_Logo4_LogoWord.jpg" alt=""></a> -->
+        <button class="toggle-btn">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 80">
+                <rect width="100" height="20" rx="8"></rect>
+                <rect y="30" width="100" height="20" rx="8"></rect>
+                <rect y="60" width="100" height="20" rx="8"></rect>
+            </svg>
+        </button>
+    </section>
+    <nav>
+           <ul class="menu flex-container">
+                <li><a href="#">Projects<span>&#9660;</span></a>
+                  <ul class="dropdown">
+
+                    <li><a href="graphics.html">Graphics</a></li>
+                    <li><a href="web-design.html">Web-design</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    
                 </ul>
-            </nav>
+                </li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="#">Contact</a>
+                <ul class="dropdown" >
+                <li><a href="tel:+15879367413">Call</a></li>
+              <li><a href="mailto:simmrann4979@gmail.com">Email</a> </li>
+              <li><a href="sms:+15879367413">Text</a></li>
+              <li><a href="https://www.instagram.com/s.i.m.r.a.n7/">Instagram</a></li>
+
+              
+              <!-- <li><a href="https://wa.me/15879367413">WhatsApp</a></li> -->
+            
+            </ul>
+                
+                </li>
+             
+
+            </ul>
+        </nav>
     </header>
 
-    <h3>These are the responsive websites </h3>
 
-   <div class="container-1">
-        <img src="img/thumbnails/etudes.png" alt="">
-        <h3>this is a website</h3>
-         
-        <a href="https://lively-gelato-6041e3.netlify.app">Click here</a>
-    </div> 
-
-    <h3>These are the non-responsive websites that i have created as parts of the projects in first semester at NAIT.</h3>
-
-   <div class="container-1">
-    <img src="img/thumbnails/farmer.png" alt="">
-    <h3>The Farmer's Market</h3>
-    <a href="https://6607b878053e1fb526a98ffb--darling-faloodeh-264ce6.netlify.app">view >></a>
-   </div>
-
+    <div class="container ">
+      <div class="row d-md-flex justify-content-center gap-4 mt-4">
+        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+              <img src="img/thumbnails/etudes.png" class="card-img-top w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Etudes</h5>
+                <p class="card-text">It's a website for the Etudes Architectural Company</p>
+                <a href="https://lively-gelato-6041e3.netlify.app" class="btn btn-primary">Visit</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+            <img src="img/thumbnails/farmer.png" class="card-img-top w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Farmer's Market</h5>
+              <p class="card-text">It's a non-responsive webpage.</p>
+              <a href="https://6607b878053e1fb526a98ffb--darling-faloodeh-264ce6.netlify.app" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
     <script src="js/main.js" defer ></script> 
 </body>
 </html>

@@ -16,7 +16,7 @@ body {
     /* img{
         width: 15%;
     } */
-    .container {
+    .containerd {
         background-color: #f2f2f2;
         max-width: 600px; /* Adjust the maximum width of the container as needed */
         padding: 9rem 5rem;
@@ -187,10 +187,12 @@ header nav {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s ease-in-out ;
+    z-index: 1;
 }
 
 .dropdown {
     margin-left: 3rem;
+    /* z-index: 1; */
 }
 
 li span {
