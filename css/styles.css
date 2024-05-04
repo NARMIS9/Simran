@@ -187,12 +187,12 @@ header nav {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s ease-in-out ;
-    z-index: 1;
+    z-index: 2;
 }
 
 .dropdown {
     margin-left: 3rem;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 li span {
