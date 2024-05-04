@@ -190,9 +190,9 @@ header nav {
     z-index: 2;
 }
 
-.dropdown {
+.dropdown , .dropdown-2{
     margin-left: 3rem;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 li span {
